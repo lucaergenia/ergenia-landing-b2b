@@ -1,0 +1,94 @@
+body {
+    background: #000;
+    margin: 0;
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 32px auto 0 auto;    /* Más arriba */
+    text-align: center;
+    padding-bottom: 60px;         /* Agrega espacio para que el footer no tape nada */
+}
+
+.main-logo {
+    width: 120px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    margin: 0 0 35px 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.store-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    border-radius: 12px;
+    padding: 28px 20px;
+    margin: 22px auto;
+    max-width: 95%;
+    min-width: 270px;
+    font-size: 1.18rem;
+    font-weight: 500;
+    transition: background 0.15s;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.store-btn:hover {
+    background: #333;
+}
+
+.store-btn .icon {
+    width: 38px;
+    height: 38px;
+    margin-right: 18px;
+    display: block;
+}
+
+.store-btn span {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    padding: 10px 0 8px 0;
+    text-align: center;
+    font-size: 0.89rem;
+    color: #bbb;
+    background: transparent;
+    letter-spacing: 1px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    user-select: none;
+    pointer-events: none; /* Así nunca tapa contenido en mobile */
+}
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 98vw;
+        margin-top: 18px;
+        padding-bottom: 70px;    /* Más espacio por el footer en mobile */
+    }
+    .main-logo {
+        width: 90px;
+    }
+    .store-btn {
+        padding: 26px 10px;
+        font-size: 1rem;
+    }
+}
